@@ -1,7 +1,7 @@
 package test.game;
 
 public class Gun {
-    private Ball ball ;
+    private Ball ball;
     private String name;
     private double bord;
     private double power;
@@ -52,8 +52,6 @@ public class Gun {
     public void setSize(double size) {
         this.size = size;
     }
-
-
 
 
     public Ball getBall() {

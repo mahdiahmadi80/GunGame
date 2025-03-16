@@ -36,11 +36,8 @@ public class Shooter implements ShootingContract {
 
     @Override
     public void addBulletOfGivenSizeToGun(float size, int count) throws Exception {
-
         float sizeGun = gun.getSize();
-
         if (count > 0 && size == sizeGun && gun != null) {
-
             switch ((int) size) {
                 case (int) 0.5:
                     setBall(Ball.A);
@@ -62,6 +59,28 @@ public class Shooter implements ShootingContract {
 
     @Override
     public float shootToTarget(int targetX, int targetY, int targetDistance, int aimX, int aimY) throws Exception {
+
+        int[][] Coordinates = new int[10][10];
+        if (gun.getBord() < targetDistance) {
+            System.out.println("0");
+        } else {
+            System.out.println("bord va fasele entekhabi ok bod shelik anjam shod");
+            double a = gun.getPower() * ball.getDamage();
+        }
+        if (gun != null && ball != null) {
+            System.out.println("gun and ball is ok");
+        } else {
+            throw new Exception("selah va ball entekhab nashode ast");
+        }
+
+        if (aimX <= Coordinates.length && aimY <= Coordinates.length) {
+            System.out.println("shelik dar mokhtasat anjam shod");
+
+        } else {
+            System.out.println("0");
+            throw new Exception("mokhtasat shelik kharej az mahdode ast");
+        }
+
         return 0;
     }
 

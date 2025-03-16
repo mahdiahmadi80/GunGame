@@ -30,14 +30,19 @@ public class Main extends Shooter {
 
         sc.addBulletOfGivenSizeToGun(ballSize, ballCount);
 
-        System.out.println(sc.getGun().getName());
-        System.out.println(sc.getBall().getName());
+        System.out.println("aslahe entekhabi:"+ sc.getGun().getName());
+        System.out.println("ball entekhabi:"+sc.getBall().getName());
 
-
-        String
-
-
-
-
+        System.out.println("mohtasat X ra vared konid");
+        int targetX = scanner.nextInt();
+        System.out.println("mohtasat Y ra vared konid");
+        int targetY = scanner.nextInt();
+        System.out.println("fasele ta hadaf ra vared konid");
+        int targetDistance = scanner.nextInt();
+        System.out.println("mokhtasat shelic X");
+        int aimX = scanner.nextInt();
+        System.out.println("mokhtasat shelic Y");
+        int aimY = scanner.nextInt();
+      sc.shootToTarget(targetX, targetY, targetDistance, aimX, aimY);
     }
 }
